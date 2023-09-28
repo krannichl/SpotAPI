@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Spotify WebApp</title>
+
+        <!-- BootStrap einbindung-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <script src="3-responsive/https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Einbindung Stylesheet -->
+        <link rel="stylesheet" id="style-base" href="style.css" />
+
+        
+    </head>
+    <body>
+        <header>
+            <!-- überschrift -->
+            <h1>
+                <span class="app-title">Basic Spotify API Calls</span>
+            </h1>
+            
+            <!-- Auswahl Menü -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#">Link 1</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#">Link 2</a>
+                        </li>
+                        
+                        <li>
+                            <a class="navbar-brand" href="https://developer.spotify.com/" class="icon-logout">Spotify API</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+
+                </div> 
+            </nav>
+
+        </header>
+        <main>
+            <div class="context">
+                <h2 class="dokuHeader">
+                    Funktionen
+                </h2>
+                <p class="lead">
+                    Im Folgenden, sind Interaktive Website-Elemente, wie Buttons und ähnliches zu finden, mit denen Grundlegende Funktionen der Spotify API ausgeführt werden können. 
+                </p>
+            </div>
+            
+            <div class="Top5Songs">
+                <h3></h3>
+                <button type="button" class="btn btn-outline-dark" onclick="main()">Top 5</button>
+                <p id="result" class="lead"></p>
+
+                <!-- Einbindung eines JScript, dass die TOP 5 Songs des Nutzeraccounts ausgibt -->
+                <script src="TOP5Songs.js"></script>
+
+            </div>
+
+            <div class="WebPlayer">
+                das ist jetzt mal nur rein copy pasted
+                <div>
+                     <!-- Copy Paste aus vorheriger Datei-->
+                    <script language="javascript" type="text/javascript">
+                        const playlistId = '1SzAXkKbD5F51BESmomANl';
+                    </script>
+
+                    <iframe title="Spotify Embed: Recommendation Playlist " src="https://open.spotify.com/embed/playlist/1SzAXkKbD5F51BESmomANl?utm_source=generator&theme=0" width="50%" height="50%" style="min-height: 360px" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+
+
+        </main>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>

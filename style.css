@@ -1,0 +1,39 @@
+html{
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+header{
+    background: white;
+    border-bottom: 3px solid black;
+}
+
+header h1{
+    color: green;
+    font-size: 260%;
+    margin: 0 0 2rem 0;
+}
+
+header nav ul{
+    list-style: none;
+    column-gap: 2em;
+    display: flex;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+a, a :visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main .context .dokuHeader{
+    color: green;
+    margin: 1em 0 1em 0;
+}
+
+main .context{
+    margin: 1em 0 1em 0;
+}
